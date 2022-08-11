@@ -53,9 +53,9 @@ class HBNBCommand(cmd.Cmd):
         args = args.split()
         if len(args) == 0:
             print("** class name missing **")
-        elif len(args) == 1 and args[0] not in HBNBCommand.classes.keys():
+        elif args[0] not in HBNBCommand.classes.keys():
             print("** class doesn't exist **")
-        elif len(args) == 1 and args[0] in HBNBCommand.classes.keys():
+        elif args[0] in HBNBCommand.classes.keys() and len(args) == 1:
             print("** instance id missing **")
         else:
             instances = models.storage.all()
