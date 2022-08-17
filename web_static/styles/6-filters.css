@@ -70,3 +70,8 @@ h4{
 .amenities:hover .popover {
   display: block;
 }
+
+/* Locations list element margin */
+.filters .locations li {
+	margin: 0 auto 6px 3em;
+}
